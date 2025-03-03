@@ -42,3 +42,4 @@ C:\LibraryMangmentProject\LibraryMangmentSystem\LibraryMangmentSystem\bin\Debug\
 C:\LibraryMangmentProject\LibraryMangmentSystem\LibraryMangmentSystem\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\LibraryMangmentProject\LibraryMangmentSystem\LibraryMangmentSystem\bin\Debug\net8.0-windows\EPPlus.System.Drawing.dll
 C:\LibraryMangmentProject\LibraryMangmentSystem\LibraryMangmentSystem\bin\Debug\net8.0-windows\System.Drawing.Common.dll
+C:\LibraryMangmentProject\LibraryMangmentSystem\LibraryMangmentSystem\obj\Debug\net8.0-windows\LibraryMangmentSystem.sourcelink.json

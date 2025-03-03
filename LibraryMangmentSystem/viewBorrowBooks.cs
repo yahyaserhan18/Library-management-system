@@ -71,6 +71,12 @@ namespace LibraryMangmentSystem
 
             lbBooksCount.Text = clsDataLayerForBorrowBook.GetBorrowedBookCount().ToString();
 
+            if (dataGridView1.Columns["IsDelivered"] != null)
+            {
+                dataGridView1.Columns["IsDelivered"].Visible = false;
+            }
+
+
             // إضافة عمود زر "الإجراء" إذا لم يكن موجودًا
             if (dataGridView1.Columns["الإجراء"] == null)
             {
@@ -370,6 +376,8 @@ namespace LibraryMangmentSystem
 
                 DataTable dt = clsDataLayerForBorrowBook.GetAllBorrowedBooks();
                 dataGridView1.DataSource = dt;
+
+                lbBooksCount.Text = clsDataLayerForBorrowBook.GetBorrowedBookCount().ToString();
             }
         }
 

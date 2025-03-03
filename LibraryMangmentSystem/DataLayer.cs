@@ -347,47 +347,7 @@ namespace LibraryMangmentSystem
 
         }
 
-        static public bool isExist(int ID)
-        {
-
-            bool isfound = false;
-
-            SqlConnection connection = new SqlConnection(DataAccessSettings.connectionString);
-
-            string query = @"select top 1 found=1 from [dbo].[Contacts]
-                            where ContactID = @id";
-
-
-            SqlCommand command = new SqlCommand(query, connection);
-
-            command.Parameters.AddWithValue("@id", ID);
-
-            try
-            {
-                connection.Open();
-
-                //object result = command.ExecuteScalar();
-                //if(result != null) 
-                //    isfound = true;
-
-                SqlDataReader reader = command.ExecuteReader();
-
-                isfound = reader.HasRows;
-                reader.Close();
-
-            }
-            catch (Exception ex)
-            {
-                //
-            }
-            finally
-            {
-                connection.Close();
-            }
-
-            return isfound;
-        }
-
+      
         static public DataTable GetAllBooks()
         {
             DataTable dt = new DataTable();
